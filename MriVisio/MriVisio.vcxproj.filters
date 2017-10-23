@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="filters.cpp">
+      <Filter>filters</Filter>
+    </ClCompile>
+    <ClCompile Include="actions.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="common.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="contour.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="definitions.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="image_utils.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="window_utils.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="filters.h">
+      <Filter>filters</Filter>
+    </ClInclude>
+    <ClInclude Include="actions.h">
+      <Filter>actions</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="contour.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="definitions.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="image_utils.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="point.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="window_utils.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="filters">
+      <UniqueIdentifier>{2a9d204b-e252-494d-ba0b-af9f950ded28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="actions">
+      <UniqueIdentifier>{22baaaf3-9bed-4bab-ba08-1beb66487eec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{ec5d6d6b-399f-4c68-97ba-458514c375ce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
