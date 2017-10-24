@@ -35,6 +35,7 @@ namespace image_utils
 
 	image_t contour_to_image(contour_container cont, CvSize size, int depth, int channels);
 	image_t contour_to_image(contour cont, image_t image);
+	image_t contour_to_image(contour_container conts, image_t image);
 
 	image_t draw_contour_on_image(contour cont, image_t image);
 	image_t draw_contour_on_image(contour_container cont, image_t image);

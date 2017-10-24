@@ -198,6 +198,11 @@ image_t image_utils::contour_to_image(contour_container conts, CvSize size, int 
 	return dst;
 }
 
+image_t image_utils::contour_to_image(contour_container conts, image_t image)
+{
+	return contour_to_image(conts, CvSize(image->width, image->height), image->depth, image->nChannels);
+}
+
 image_t image_utils::contour_to_image(contour cont, image_t image)
 {
 	image_t dst = image_utils::create(CvSize(image->width, image->height), image->depth, image->nChannels);
