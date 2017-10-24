@@ -271,6 +271,9 @@ image_t image_utils::draw_contour_on_image(contour_container cont, image_t image
 	while (!cont.is_end())
 	{
 		contour current = cont.get();
+		if (current == NULL)
+			break;
+
 		dst = draw_contour_on_image(current, dst);
 	}
 	return dst;
