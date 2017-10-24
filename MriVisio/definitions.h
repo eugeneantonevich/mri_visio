@@ -19,5 +19,7 @@ namespace common_def
 namespace fs = std::experimental::filesystem;
 
 typedef IplImage* image_t;
-typedef std::shared_ptr<std::list<image_t>> images_container;
+typedef std::list<image_t> images_container;
 
+typedef std::string			file_t;
+typedef std::list<file_t>	files_t;

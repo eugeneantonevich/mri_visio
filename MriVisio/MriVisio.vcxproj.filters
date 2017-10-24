@@ -49,6 +49,9 @@
     <ClInclude Include="window_utils.h">
       <Filter>common</Filter>
     </ClInclude>
+    <ClInclude Include="scope_image.h">
+      <Filter>common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="filters">

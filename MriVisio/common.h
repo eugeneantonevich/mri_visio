@@ -3,8 +3,10 @@
 #include "definitions.h"
 
 namespace common
-{
-	images_container read_directory(const std::string& path);
+{	
+	std::string append_prefix(const std::string& full_name, const std::string& prefix);
+
+	files_t read_directory(const std::string& path);
 }
 
 
