@@ -198,6 +198,15 @@ image_t image_utils::contour_to_image(contour_container conts, CvSize size, int 
 	return dst;
 }
 
+image_t image_utils::contour_to_image(contour cont, image_t image)
+{
+	image_t dst = image_utils::create(CvSize(image->width, image->height), image->depth, image->nChannels);
+	cvZero(dst);
+
+	cvDrawContours(dst, cont, CV_RGB(255, 216, 0), CV_RGB(0, 0, 250), 0, 1, 8);
+	return dst;
+}
+
 image_t image_utils::contour_to_image(contour cont, CvSize size, int depth, int channels)
 {
 	if (cont == NULL)
